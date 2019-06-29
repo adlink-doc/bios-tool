@@ -1,0 +1,88 @@
+
+.. _intro:
+
+
+Introduction
+=============
+
+.. image:: ../images/bios_icon.png
+   :height: 200px
+   :width:  200px
+   :scale: 100 %
+   :align: right
+
+
+----------------
+what is BMT?
+
+**BIOS Modification Tools** |br|
+
+Tools to modify a BIOS binary to custom needs!
+* Custom splash screen
+* Custom setup defaults
+
+Tools to remove the need to make changes in source code by dedicated BIOS engineers
+
+
+Features
+----------
+
+
+.. image:: ../images/bmt.png
+   :height: 374px
+   :width:  500px
+   :align: left
+   :scale: 100 %
+
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+
+|SPN| functions are designed to be:
+
+* Rename Entries
+* Change Visibility
+* Change Access Level
+* Delete BIOS Options
+* Set Default Values
+* Change DMI Information
+* Save Changes
+* Load Changes
+* Track Changes
+
+
+
+Support Operating System
+--------------------------
+
+* Windows 7 32bit/64bit
+* Windows 10 64bit
+
+Support Hardware
+----------------
+* Express-CF
+* Express-KL, cExpress-KL
+* Express-SL, cExpress-SL
+* Express-BL, cExpress-BL
+* Express-DN7
+* Express-BD7
+* cExpress-AL, NanoX-AL, Q7-AL and LEC-AL
+* cExpress-BW, Q7-BW, LEC-BW
+* cExpress-BT, cExpress-BT2, NanoX-BT, 
+* ETX-BT, LEC-BT, Q7-BT
+
+
+
