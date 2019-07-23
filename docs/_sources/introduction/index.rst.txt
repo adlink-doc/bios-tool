@@ -11,7 +11,7 @@ What is BMT?
 -------------
 
 **BIOS Modification tool** is common utility for all ADLINK COM/SAMRC/Q7 products which allows you to configure the menu of AMI UEFI BIOS binary file. |br|
-It only supports WIndows GUI version and all operation are performaed on BIOS ROM file only. |br|
+It only supports WIndows GUI version and all operation are performaed on ROM file only. |br|
 
 .. note::
    It is free utility and 3rd-party license is not required
@@ -20,11 +20,11 @@ It only supports WIndows GUI version and all operation are performaed on BIOS RO
 Features
 ----------
 
-- **Rename Entries**:     Allow you to renew the name for each node or entries
+- **Rename Entries**:     Allow you to renew each node or entries
 - **Change Visibility**:  Allow you to hide / show any entries
-- **Set Default Values**:  Allow you to configure the values for each entries
+- **Set Default Values**:  Allow you to configure the values as the default for each entries
 - **Change DMI Information**:  Allow you to modify DMI data, such BIOS information, System information or to add OEM strings
-- **Track Changes**:  Allow you to trace any changes you made before.
+- **Track Changes**:  Allow you to track any changes you made.
 - **Import setting**:  Allow you import your preference without re-configuration.
 
 
