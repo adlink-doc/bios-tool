@@ -8,7 +8,7 @@ Introduction
 
 
 What is BMT?
-------------------------------------
+-------------
 
 BIOS Modification tool is common utility for all ADLINK COM/SAMRC/Q7 products, which allows you to perform ADLINK AMI UEFI BIOS binary file for customer needs.
 This utility only support WIndows GUI version and all operation are performaed on BIOS ROM file only.
@@ -24,8 +24,8 @@ Features
 .. image:: ../images/bmt.png
    :height: 496 px
    :width:  600 px
-   :alt: Left floating image 
-   :class: with-shadow float-left
+   :alt: Application screen 
+   :class: float-left
 
 
 |br|

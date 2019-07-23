@@ -87,7 +87,18 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul class="simple">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#download-bmt">Download BMT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#features-of-bios-modification-tool">Features of BIOS Modification Tool</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rename-entries"><strong>1. Rename Entries</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#change-visibility"><strong>2. Change Visibility</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-default-values"><strong>3. Set Default Values</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#change-dmi-information"><strong>4. Change DMI Information</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#track-changes"><strong>5. Track Changes</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#import-setting"><strong>6. Import setting</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-flash-bios">How to Flash BIOS</a></li>
 </ul>
 </li>
 </ul>
@@ -154,7 +165,167 @@
             
   <div class="section" id="getting-started">
 <span id="id1"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+<div class="section" id="download-bmt">
+<h2>Download BMT<a class="headerlink" href="#download-bmt" title="Permalink to this headline">¶</a></h2>
+<p>it is available on GitHub and extract it after download</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ADLINK</span><span class="o">/</span><span class="n">bios</span><span class="o">-</span><span class="n">utility</span><span class="o">.</span><span class="n">git</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="features-of-bios-modification-tool">
+<h2>Features of BIOS Modification Tool<a class="headerlink" href="#features-of-bios-modification-tool" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="rename-entries">
+<h3><strong>1. Rename Entries</strong><a class="headerlink" href="#rename-entries" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Allow you to renew the name for each node or entries</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">File</span> <span class="pre">&gt;</span> <span class="pre">open</span></code> to load ROM file</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_open.png"><img alt="Application screen" src="../_images/bmt_open.png" style="width: 550px; height: 467px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>Once loaded successfully, All of entries will be shown.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_loaded.png"><img alt="Application screen" src="../_images/bmt_loaded.png" style="width: 550px; height: 467px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>For example, modify the name from “North Bridge” to “NB”</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_change_entry.png"><img alt="Application screen" src="../_images/bmt_change_entry.png" style="width: 550px; height: 467px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>After modification, any changes will be highlight and log, then save as new ROM file.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_change_entry_save.png"><img alt="Application screen" src="../_images/bmt_change_entry_save.png" style="width: 550px; height: 467px;" /></a>
+</div>
+<div class="section" id="change-visibility">
+<h3><strong>2. Change Visibility</strong><a class="headerlink" href="#change-visibility" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Allow you to hide / show any entries</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Select any entry on the left side and change its visibility. For example, to hide “Bluetooth Sideband”.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_hide.png"><img alt="Application screen" src="../_images/bmt_hide.png" style="width: 550px; height: 467px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>After modification, any changes will be highlight and log, then save as new ROM file.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_hide_done.png"><img alt="Application screen" src="../_images/bmt_hide_done.png" style="width: 550px; height: 467px;" /></a>
+</div>
+<div class="section" id="set-default-values">
+<h3><strong>3. Set Default Values</strong><a class="headerlink" href="#set-default-values" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Allow you to configure the values for each entries</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Select any entry on the left side and choose the valuse as the default on the right droplist.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_set_default.png"><img alt="Application screen" src="../_images/bmt_set_default.png" style="width: 550px; height: 467px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>After modification, any changes will be highlight and log, then save as new ROM file.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_set_default_done.png"><img alt="Application screen" src="../_images/bmt_set_default_done.png" style="width: 550px; height: 467px;" /></a>
+</div>
+<div class="section" id="change-dmi-information">
+<h3><strong>4. Change DMI Information</strong><a class="headerlink" href="#change-dmi-information" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Allow you to modify DMI data, such BIOS information, System information or to add OEM strings</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Go to DMI Table and double click which one you would like to configure. For example, “Baseboard or Module Information”:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_dmi_done.png"><img alt="Application screen" src="../_images/bmt_dmi_done.png" style="width: 550px; height: 467px;" /></a>
+</div>
+<div class="section" id="track-changes">
+<h3><strong>5. Track Changes</strong><a class="headerlink" href="#track-changes" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Allow you to trace any changes you made before.</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click “Full track logo” button to see all of changes</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_change_log.png"><img alt="Application screen" src="../_images/bmt_change_log.png" style="width: 550px; height: 467px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>Click “Save track” button to save as log file.</p></li>
+</ol>
+<blockquote>
+<div><a class="reference internal image-reference" href="../_images/bmt_save_log.png"><img alt="Application screen" src="../_images/bmt_save_log.png" style="width: 550px; height: 467px;" /></a>
+</div></blockquote>
+</div>
+<div class="section" id="import-setting">
+<h3><strong>6. Import setting</strong><a class="headerlink" href="#import-setting" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Allow you import your preference without re-configuration</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Click “Import setting” button to load the change log you stored before.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/bmt_import.png"><img alt="Application screen" class="align-left" src="../_images/bmt_import.png" style="width: 550px; height: 467px;" /></a>
+<a class="reference internal image-reference" href="../_images/bmt_import_log.png"><img alt="Application screen" class="align-left" src="../_images/bmt_import_log.png" style="width: 550px; height: 467px;" /></a>
+<a class="reference internal image-reference" href="../_images/bmt_import_log_done.png"><img alt="Application screen" class="align-left" src="../_images/bmt_import_log_done.png" style="width: 550px; height: 467px;" /></a>
+<p><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /></p>
+</div>
+</div>
+<div class="section" id="how-to-flash-bios">
+<h2>How to Flash BIOS<a class="headerlink" href="#how-to-flash-bios" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

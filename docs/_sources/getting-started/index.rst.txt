@@ -3,9 +3,210 @@
 Getting Started
 =================
 
-.. toctree::
-   :maxdepth: 2
 
-   
+Download BMT
+------------
+it is available on GitHub and extract it after download
+::
+
+  git clone https://github.com/ADLINK/bios-utility.git
 
 
+Features of BIOS Modification Tool
+----------------------------------
+
+**1. Rename Entries** 
+^^^^^^^^^^^^^^^^^^^^^^
+ Allow you to renew the name for each node or entries
+
+
+1. Click ``File > open`` to load ROM file
+
+.. image:: ../images/bmt_open.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+2. Once loaded successfully, All of entries will be shown.
+
+.. image:: ../images/bmt_loaded.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+3. For example, modify the name from "North Bridge" to "NB"
+
+.. image:: ../images/bmt_change_entry.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+4. After modification, any changes will be highlight and log, then save as new ROM file.
+
+.. image:: ../images/bmt_change_entry_save.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+
+
+**2. Change Visibility**
+^^^^^^^^^^^^^^^^^^^^^^^^^ 
+ Allow you to hide / show any entries
+
+
+1. Select any entry on the left side and change its visibility. For example, to hide "Bluetooth Sideband".
+
+.. image:: ../images/bmt_hide.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+2. After modification, any changes will be highlight and log, then save as new ROM file.
+
+.. image:: ../images/bmt_hide_done.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+
+
+**3. Set Default Values**
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Allow you to configure the values for each entries
+
+1. Select any entry on the left side and choose the valuse as the default on the right droplist.  
+
+.. image:: ../images/bmt_set_default.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+2. After modification, any changes will be highlight and log, then save as new ROM file.
+
+.. image:: ../images/bmt_set_default_done.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+
+**4. Change DMI Information**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ Allow you to modify DMI data, such BIOS information, System information or to add OEM strings
+
+
+1. Go to DMI Table and double click which one you would like to configure. For example, "Baseboard or Module Information":
+
+.. image:: ../images/bmt_dmi_done.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+
+**5. Track Changes**
+^^^^^^^^^^^^^^^^^^^^^
+ Allow you to trace any changes you made before.
+
+1. Click "Full track logo" button to see all of changes
+
+.. image:: ../images/bmt_change_log.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+2. Click "Save track" button to save as log file.
+
+ .. image:: ../images/bmt_save_log.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+
+
+**6. Import setting**  
+^^^^^^^^^^^^^^^^^^^^^^
+ Allow you import your preference without re-configuration
+
+1. Click "Import setting" button to load the change log you stored before.
+
+.. image:: ../images/bmt_import.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+   :align: left
+
+.. image:: ../images/bmt_import_log.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+   :align: left
+
+.. image:: ../images/bmt_import_log_done.png
+   :height: 467 px
+   :width:  550 px
+   :alt: Application screen 
+   :align: left
+
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+
+How to Flash BIOS
+------------------
