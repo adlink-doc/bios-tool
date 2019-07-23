@@ -28,8 +28,6 @@ Features
 - **Import setting**:  Allow you import your preference without re-configuration.
 
 
-
-
 Support Operating System
 --------------------------
 
