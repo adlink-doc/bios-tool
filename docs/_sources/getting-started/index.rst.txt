@@ -20,7 +20,7 @@ Features of BIOS Modification Tool
  Allow you to renew the name for each node or entries
 
 
-1. Click ``File > open`` to load ROM file
+1. Go to ``File`` > ``open`` to load ROM file
 
 .. image:: ../images/bmt_open.png
    :height: 467 px
