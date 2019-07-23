@@ -88,6 +88,7 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-bmt">What is BMT?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#support-operating-system">Support Operating System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#support-hardware">Support Hardware</a></li>
@@ -158,15 +159,19 @@
             
   <div class="section" id="introduction">
 <span id="intro"></span><h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<a class="reference internal image-reference" href="../_images/bios_icon.png"><img alt="../_images/bios_icon.png" class="align-right" src="../_images/bios_icon.png" style="width: 200.0px; height: 200.0px;" /></a>
-<p><strong>BIOS Modification Tools</strong> <br /></p>
-<p>Tools to modify a BIOS binary to custom needs!
-* Custom splash screen
-* Custom setup defaults</p>
-<p>Tools to remove the need to make changes in source code by dedicated BIOS engineers</p>
+<div class="section" id="what-is-bmt">
+<h2>What is BMT?<a class="headerlink" href="#what-is-bmt" title="Permalink to this headline">¶</a></h2>
+<p>BIOS Modification tool is common utility for all ADLINK COM/SAMRC/Q7 products, which allows you to perform ADLINK AMI UEFI BIOS binary file for customer needs.
+This utility only support WIndows GUI version and all operation are performaed on BIOS ROM file only.
+When ROM file is selected on this utility and allow you to load ADLINK BIOS for the following hardware, see <a class="reference internal" href="#intro-support-hardware"><span class="std std-ref">Support Hardware</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is free utility and 3rd-party license is not required</p>
+</div>
+</div>
 <div class="section" id="features">
 <h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
-<a class="reference internal image-reference" href="../_images/bmt.png"><img alt="../_images/bmt.png" class="align-left" src="../_images/bmt.png" style="width: 500.0px; height: 374.0px;" /></a>
+<a class="with-shadow float-left reference internal image-reference" href="../_images/bmt.png"><img alt="Left floating image" class="with-shadow float-left" src="../_images/bmt.png" style="width: 600px; height: 496px;" /></a>
 <p><br />
 <br />
 <br />
@@ -182,18 +187,20 @@
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br /></p>
-<p>BMT functions are designed to be:</p>
 <ul class="simple">
-<li><p>Rename Entries</p></li>
-<li><p>Change Visibility</p></li>
-<li><p>Change Access Level</p></li>
-<li><p>Delete BIOS Options</p></li>
-<li><p>Set Default Values</p></li>
-<li><p>Change DMI Information</p></li>
-<li><p>Save Changes</p></li>
-<li><p>Load Changes</p></li>
-<li><p>Track Changes</p></li>
+<li><p><strong>Rename Entries</strong>:     Allow you to renew the name for each node or entries</p></li>
+<li><p><strong>Change Visibility</strong>:  Allow you to hide / show any entries</p></li>
+<li><p><strong>Set Default Values</strong>:  Allow you to configure the values for each entries</p></li>
+<li><p><strong>Change DMI Information</strong>:  Allow you to modify DMI data, such BIOS information, System information or to add OEM strings</p></li>
+<li><p><strong>Track Changes</strong>:  Allow you to trace any changes you made before.</p></li>
+<li><p><strong>Import setting</strong>:  Allow you import your preference without re-configuration.</p></li>
 </ul>
 </div>
 <div class="section" id="support-operating-system">
@@ -204,7 +211,7 @@
 </ul>
 </div>
 <div class="section" id="support-hardware">
-<h2>Support Hardware<a class="headerlink" href="#support-hardware" title="Permalink to this headline">¶</a></h2>
+<span id="intro-support-hardware"></span><h2>Support Hardware<a class="headerlink" href="#support-hardware" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Express-CF</p></li>
 <li><p>Express-KL, cExpress-KL</p></li>
@@ -242,7 +249,7 @@
     <p>
         &copy; Copyright 2019, ADLINK Technology Inc.
       <span class="lastupdated">
-        Last updated on Jun 30, 2019.
+        Last updated on Jul 23, 2019.
       </span>
 
     </p>

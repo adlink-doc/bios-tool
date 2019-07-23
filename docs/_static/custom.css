@@ -90,3 +90,9 @@ th,td {
 .rst-content div.breathe-sectiondef {
   padding-left: 0 !important;
 }
+
+
+.rst-class {
+   clear: both
+
+}

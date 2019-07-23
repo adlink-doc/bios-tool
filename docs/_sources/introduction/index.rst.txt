@@ -5,34 +5,28 @@
 Introduction
 =============
 
-.. image:: ../images/bios_icon.png
-   :height: 200px
-   :width:  200px
-   :scale: 100 %
-   :align: right
 
 
-----------------
-what is BMT?
+What is BMT?
+------------------------------------
 
-**BIOS Modification Tools** |br|
+BIOS Modification tool is common utility for all ADLINK COM/SAMRC/Q7 products, which allows you to perform ADLINK AMI UEFI BIOS binary file for customer needs.
+This utility only support WIndows GUI version and all operation are performaed on BIOS ROM file only.
+When ROM file is selected on this utility and allow you to load ADLINK BIOS for the following hardware, see :ref:`intro_support_hardware`
 
-Tools to modify a BIOS binary to custom needs!
-* Custom splash screen
-* Custom setup defaults
-
-Tools to remove the need to make changes in source code by dedicated BIOS engineers
-
+.. note::
+   It is free utility and 3rd-party license is not required
+   
 
 Features
 ----------
 
-
 .. image:: ../images/bmt.png
-   :height: 374px
-   :width:  500px
-   :align: left
-   :scale: 100 %
+   :height: 496 px
+   :width:  600 px
+   :alt: Left floating image 
+   :class: with-shadow float-left
+
 
 |br|
 |br|
@@ -50,18 +44,21 @@ Features
 |br|
 |br|
 |br|
+|br|
+|br|
+|br|
+|br|
+|br|
+|br|
+ 
 
-|SPN| functions are designed to be:
+- **Rename Entries**:     Allow you to renew the name for each node or entries
+- **Change Visibility**:  Allow you to hide / show any entries
+- **Set Default Values**:  Allow you to configure the values for each entries
+- **Change DMI Information**:  Allow you to modify DMI data, such BIOS information, System information or to add OEM strings
+- **Track Changes**:  Allow you to trace any changes you made before.
+- **Import setting**:  Allow you import your preference without re-configuration.
 
-* Rename Entries
-* Change Visibility
-* Change Access Level
-* Delete BIOS Options
-* Set Default Values
-* Change DMI Information
-* Save Changes
-* Load Changes
-* Track Changes
 
 
 
@@ -70,6 +67,8 @@ Support Operating System
 
 * Windows 7 32bit/64bit
 * Windows 10 64bit
+
+.. _intro_support_hardware:
 
 Support Hardware
 ----------------
@@ -83,6 +82,3 @@ Support Hardware
 * cExpress-BW, Q7-BW, LEC-BW
 * cExpress-BT, cExpress-BT2, NanoX-BT, 
 * ETX-BT, LEC-BT, Q7-BT
-
-
-
