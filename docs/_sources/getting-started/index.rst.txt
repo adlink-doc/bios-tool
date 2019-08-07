@@ -209,10 +209,7 @@ Features of BIOS Modification Tool
 How to Flash BIOS
 ------------------
 
-it needs using AMI flash utility to upgrade BIOS, plese refer to the following steps:
-
-UEFI mode
-^^^^^^^^^^^^
+It needs using AMI flash utility to upgrade BIOS, plese refer to the following steps:
 
 1. Download AMI Firmware Update utilities from https://ami.com/en/products/firmware-tools-and-utilities/bios-uefi-utilities/
 
