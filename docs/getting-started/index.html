@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Getting Started &mdash; BIOS Utility 2.2.9 documentation</title>
+  <title>Getting Started &mdash; BMT Utility 2.2.9 documentation</title>
   
 
   
@@ -51,7 +51,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> BIOS Utility
+            <a href="../index.html" class="icon icon-home"> BMT Utility
           
 
           
@@ -88,7 +88,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#download-bmt">Download BMT</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download">Download</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#features-of-bios-modification-tool">Features of BIOS Modification Tool</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#rename-entries"><strong>1. Rename Entries</strong></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#change-visibility"><strong>2. Change Visibility</strong></a></li>
@@ -98,7 +98,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#import-setting"><strong>6. Import setting</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-flash-bios">How to Flash BIOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-flash-bios">How to Flash BIOS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#uefi-mode">UEFI mode</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -115,7 +118,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">BIOS Utility</a>
+          <a href="../index.html">BMT Utility</a>
         
       </nav>
 
@@ -164,9 +167,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="getting-started">
-<span id="id1"></span><h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="download-bmt">
-<h2>Download BMT<a class="headerlink" href="#download-bmt" title="Permalink to this headline">¶</a></h2>
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="download">
+<h2>Download<a class="headerlink" href="#download" title="Permalink to this headline">¶</a></h2>
 <p>it is available on GitHub and extract it after download</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">ADLINK</span><span class="o">/</span><span class="n">bios</span><span class="o">-</span><span class="n">utility</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
@@ -326,6 +329,43 @@
 </div>
 <div class="section" id="how-to-flash-bios">
 <h2>How to Flash BIOS<a class="headerlink" href="#how-to-flash-bios" title="Permalink to this headline">¶</a></h2>
+<p>it needs using AMI flash utility to upgrade BIOS, plese refer to the following steps:</p>
+<div class="section" id="uefi-mode">
+<h3>UEFI mode<a class="headerlink" href="#uefi-mode" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Download AMI Firmware Update utilities from <a class="reference external" href="https://ami.com/en/products/firmware-tools-and-utilities/bios-uefi-utilities/">https://ami.com/en/products/firmware-tools-and-utilities/bios-uefi-utilities/</a></p></li>
+<li><p>Please download AMI Firmware Update utilities - “Aptio V”</p>
+<a class="reference internal image-reference" href="../_images/bios_uefi_tool.png"><img alt="../_images/bios_uefi_tool.png" src="../_images/bios_uefi_tool.png" style="width: 700px; height: 264px;" /></a>
+</li>
+</ol>
+<p><br /></p>
+<ol class="arabic" start="3">
+<li><p>Plesse copy AMI Firmware Update utilities “AfuEfix64.efi” &amp; modified BIOS to USB drive.</p></li>
+<li><p>Please enter BIOS muen and choose “UEFI: Built-in EFI Shell” in Override” to go into BIOS Shell mode.</p>
+<a class="reference internal image-reference" href="../_images/bios_uefi.png"><img alt="../_images/bios_uefi.png" src="../_images/bios_uefi.png" style="width: 600px; height: 321px;" /></a>
+</li>
+</ol>
+<p><br />
+5. Please enter the following commands to look for the files on USB drive:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Shell</span><span class="o">&gt;</span> <span class="n">fs1</span><span class="p">:</span>
+<span class="n">FS1</span><span class="p">:</span>\<span class="o">&gt;</span> <span class="n">ls</span>
+   <span class="mi">10</span><span class="o">/</span><span class="mi">15</span><span class="o">/</span><span class="mi">2018</span>  <span class="mi">17</span><span class="p">:</span><span class="mi">31</span>             <span class="mi">555</span><span class="p">,</span><span class="mi">632</span>  <span class="n">AfuEfix64</span><span class="o">.</span><span class="n">efi</span>
+   <span class="mi">10</span><span class="o">/</span><span class="mi">15</span><span class="o">/</span><span class="mi">2019</span> <span class="mi">17</span><span class="p">:</span><span class="mi">30</span>         <span class="mi">16</span><span class="p">,</span><span class="mi">777</span><span class="p">,</span><span class="mi">216</span> <span class="mi">1012</span><span class="n">VC0SS60E110</span><span class="o">.</span><span class="n">ROM</span>
+
+        <span class="mi">2</span> <span class="n">File</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>  <span class="mi">17</span><span class="p">,</span><span class="mi">332</span><span class="p">,</span><span class="mi">848</span> <span class="nb">bytes</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>you can see the location of USB drive after enter Shell module, ex: fs0 ~ fs3</p>
+</div>
+<a class="reference internal image-reference" href="../_images/bios_shell.png"><img alt="../_images/bios_shell.png" src="../_images/bios_shell.png" style="width: 600px; height: 348px;" /></a>
+<p>6. Please enter following command to flash until the utility shows “Process completed”</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">FS1</span><span class="p">:</span><span class="o">&gt;</span> <span class="n">AfuEfix64</span><span class="o">.</span><span class="n">efi</span> <span class="mi">1012</span><span class="n">VC0SS60E110</span><span class="o">.</span><span class="n">ROM</span> <span class="o">/</span><span class="n">p</span> <span class="o">/</span><span class="n">b</span> <span class="o">/</span><span class="n">n</span> <span class="o">/</span><span class="n">r</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/bios_update_process.png"><img alt="../_images/bios_update_process.png" src="../_images/bios_update_process.png" style="width: 500px; height: 622px;" /></a>
+</div>
 </div>
 </div>
 
@@ -349,7 +389,7 @@
     <p>
         &copy; Copyright 2019, ADLINK Technology Inc.
       <span class="lastupdated">
-        Last updated on Jul 23, 2019.
+        Last updated on Aug 07, 2019.
       </span>
 
     </p>

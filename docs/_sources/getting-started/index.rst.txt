@@ -1,11 +1,9 @@
-.. _getting_started:
-
 Getting Started
 =================
 
 
-Download BMT
-------------
+Download
+--------
 it is available on GitHub and extract it after download
 ::
 
@@ -15,7 +13,7 @@ it is available on GitHub and extract it after download
 Features of BIOS Modification Tool
 ----------------------------------
 
-**1. Rename Entries** 
+**1. Rename Entries**
 ^^^^^^^^^^^^^^^^^^^^^^
  Allow you to renew the name for each node or entries
 
@@ -25,33 +23,33 @@ Features of BIOS Modification Tool
 .. image:: ../images/bmt_open.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 2. Once loaded successfully, All of entries will be shown.
 
 .. image:: ../images/bmt_loaded.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 3. For example, modify the name from "North Bridge" to "NB"
 
 .. image:: ../images/bmt_change_entry.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 4. After modification, any changes will be highlight and log, then save as new ROM file.
 
 .. image:: ../images/bmt_change_entry_save.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 
 
 **2. Change Visibility**
-^^^^^^^^^^^^^^^^^^^^^^^^^ 
+^^^^^^^^^^^^^^^^^^^^^^^^^
  Allow you to hide / show any entries
 
 
@@ -60,14 +58,14 @@ Features of BIOS Modification Tool
 .. image:: ../images/bmt_hide.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 2. After modification, any changes will be highlight and log, then save as new ROM file.
 
 .. image:: ../images/bmt_hide_done.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 
 
@@ -75,19 +73,19 @@ Features of BIOS Modification Tool
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
  Allow you to configure the values for each entries
 
-1. Select any entry on the left side and choose the valuse as the default on the right droplist.  
+1. Select any entry on the left side and choose the valuse as the default on the right droplist.
 
 .. image:: ../images/bmt_set_default.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 2. After modification, any changes will be highlight and log, then save as new ROM file.
 
 .. image:: ../images/bmt_set_default_done.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 
 **4. Change DMI Information**
@@ -100,7 +98,7 @@ Features of BIOS Modification Tool
 .. image:: ../images/bmt_dmi_done.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 
 **5. Track Changes**
@@ -112,17 +110,17 @@ Features of BIOS Modification Tool
 .. image:: ../images/bmt_change_log.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 2. Click "Save track" button to save as log file.
 
  .. image:: ../images/bmt_save_log.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
 
 
-**6. Import setting**  
+**6. Import setting**
 ^^^^^^^^^^^^^^^^^^^^^^
  Allow you import your preference without re-configuration
 
@@ -131,19 +129,19 @@ Features of BIOS Modification Tool
 .. image:: ../images/bmt_import.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
    :align: left
 
 .. image:: ../images/bmt_import_log.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
    :align: left
 
 .. image:: ../images/bmt_import_log_done.png
    :height: 467 px
    :width:  550 px
-   :alt: Application screen 
+   :alt: Application screen
    :align: left
 
 |br|
@@ -210,3 +208,52 @@ Features of BIOS Modification Tool
 
 How to Flash BIOS
 ------------------
+
+it needs using AMI flash utility to upgrade BIOS, plese refer to the following steps:
+
+UEFI mode
+^^^^^^^^^^^^
+
+1. Download AMI Firmware Update utilities from https://ami.com/en/products/firmware-tools-and-utilities/bios-uefi-utilities/
+
+2. Please download AMI Firmware Update utilities - "Aptio V"
+
+   .. image:: ../images/bios_uefi_tool.png
+      :height: 264 px
+      :width:  700 px
+
+|br|
+
+3. Plesse copy AMI Firmware Update utilities "AfuEfix64.efi" & modified BIOS to USB drive.
+
+4. Please enter BIOS muen and choose "UEFI: Built-in EFI Shell” in Override" to go into BIOS Shell mode.
+
+   .. image:: ../images/bios_uefi.png
+      :height: 321 px
+      :width:  600 px
+
+|br|
+5. Please enter the following commands to look for the files on USB drive:
+::
+  Shell> fs1:
+  FS1:\> ls
+     10/15/2018  17:31             555,632  AfuEfix64.efi
+     10/15/2019 17:30         16,777,216 1012VC0SS60E110.ROM
+
+          2 File(s)  17,332,848 bytes
+
+.. note::
+    you can see the location of USB drive after enter Shell module, ex: fs0 ~ fs3
+
+.. image:: ../images/bios_shell.png
+    :height: 348 px
+    :width:  600 px
+
+
+6. Please enter following command to flash until the utility shows “Process completed”
+::
+    FS1:> AfuEfix64.efi 1012VC0SS60E110.ROM /p /b /n /r
+
+.. image:: ../images/bios_update_process.png
+    :height: 622 px
+    :width:  500 px

@@ -3,15 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-|PN| 
+|PN|
 ##########################################
 
 Welcome to |SPN| (version |version|) documentation!
-
-.. only:: internal
-
-  This document contains INTERNAL ONLY materials.
-
 
 .. toctree::
    :maxdepth: 2
@@ -19,4 +14,3 @@ Welcome to |SPN| (version |version|) documentation!
 
    introduction/index
    getting-started/index
-

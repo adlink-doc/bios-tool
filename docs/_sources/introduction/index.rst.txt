@@ -1,11 +1,5 @@
-
-.. _intro:
-
-
 Introduction
 =============
-
-
 
 What is BMT?
 -------------
@@ -15,7 +9,7 @@ It only supports WIndows GUI version and all operation are performaed on ROM fil
 
 .. note::
    It is free utility and 3rd-party license is not required
-   
+
 
 Features
 ----------
@@ -46,5 +40,5 @@ Support Hardware
 * Express-BD7
 * cExpress-AL, NanoX-AL, Q7-AL and LEC-AL
 * cExpress-BW, Q7-BW, LEC-BW
-* cExpress-BT, cExpress-BT2, NanoX-BT, 
+* cExpress-BT, cExpress-BT2, NanoX-BT,
 * ETX-BT, LEC-BT, Q7-BT
