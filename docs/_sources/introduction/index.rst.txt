@@ -8,7 +8,8 @@ What is BMT?
 It only supports WIndows GUI version and all operation are performaed on ROM file only. |br|
 
 .. note::
-   It is free utility and 3rd-party license is not required
+  1.It is free utility and 3rd-party license is not required |br|
+  2.Only ADLINK AMI BIOS can be used for this utility
 
 
 Features
